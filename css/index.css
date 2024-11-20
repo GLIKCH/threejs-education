@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+    position: relative;
+}
+
+canvas {
+    display: block;
+    position: absolute; /* Ensures it covers the full viewport */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Behind any UI */
+}
+
+#gk_scene {
+    z-index: 0;
+}
+
+#init_txt {
+    position: absolute; /* Fix it relative to the viewport */
+    top: 50px; /* Place it where you want */
+    left: 50px;
+    background: rgba(184, 0, 0, 0.7); /* Add a semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    z-index: 10; /* Above the Three.js canvas */
+    font-family: Arial, sans-serif;
+    max-width: 450px; /* Constrain the size */
+    word-wrap: break-word; /* Prevent text overflow */
+}

@@ -69,7 +69,7 @@ function createGridHelpers(scene) {
 
 // Create Mesh with Wireframes
 function createMesh(scene) {
-    const geo = new THREE.IcosahedronGeometry(10, 1);
+    const geo = new THREE.IcosahedronGeometry(30, 30);
     const baseMat = new THREE.MeshStandardMaterial({ color: 0xffffff, flatShading: true });
     const baseMesh = new THREE.Mesh(geo, baseMat);
     baseMesh.position.set(0, 10, 0);
